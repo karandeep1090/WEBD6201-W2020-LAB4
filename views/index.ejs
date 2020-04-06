@@ -1,11 +1,29 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<!-- Top Components -->
+<%- include ./partials/head.ejs %>
+<%- include ./partials/header.ejs %>
+
+
+<!-- Content Area -->
+<main class="container" id="mainContent">
+
+<% if (title == 'Home') { %>
+
+ <%- include ./content/home.ejs %>
+
+<% } else if(title == 'About') { %>
+
+<%- include ./content/about.ejs %>
+
+<% } else if(title == 'Contact') { %>
+
+<%- include ./content/contact.ejs %>
+
+<% } %>
+
+</main> 
+
+
+<!-- Bottom components -->
+<%- include ./partials/scripts.ejs %>
+<%- include ./partials/footer.ejs %>
+<%- include ./partials/bottom.ejs %>
