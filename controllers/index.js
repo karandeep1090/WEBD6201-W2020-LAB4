@@ -1,3 +1,14 @@
+/*
+File name : index.js
+Student's name : Karandeep
+StudentID : 100734535
+Student's name : Ritu Patel
+StudentID : 100730021
+Student's name : Harmanpreet Kaur
+StudentID : 100734511
+Date : 2020-04-06
+*/
+
 /* CONTROLLERS SECTION */
 module.exports.displayHome = (res) =>
 {
