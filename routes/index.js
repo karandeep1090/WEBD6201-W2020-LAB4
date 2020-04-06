@@ -14,6 +14,11 @@ router.get('/home', (req, res, next) => {
   controllers.displayHome(res);
 });
 
+/* GET project page */
+router.get('/projects', (req, res, next) => {
+  controllers.displayProjects(res);
+});
+
 /* GET about page */
 router.get('/about', (req, res, next) =>
   {

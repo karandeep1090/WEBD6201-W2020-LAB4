@@ -7,6 +7,14 @@ module.exports.displayHome = (res) =>
     });
 }
 
+module.exports.displayProjects = (res) =>
+{
+  res.render('index',
+  {
+    title: 'Projects'
+  });
+}
+
 module.exports.displayAbout = (res) =>
 {
   res.render('index',
